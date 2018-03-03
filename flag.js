@@ -1,11 +1,37 @@
 #!/usr/bin/env node
 
 const repl = require('repl');
+const chalk = require('chalk');
 
-// console.log('It is \u001b[31mnot\u001b[39m easy to use \u001b[32mhardcoded \u001b[1mANSI\u001b[39m\u001b[22m codes!');
+let flag= "";
+let stripeAfterStar = " ".repeat(35);
+let stripe = " ".repeat(50);
 
-const bold = string => `\u001b[1m${string}\u001b[22m`
-const green = string => `\u001b[32m${string}\u001b[39m`
-const red = string => `\u001b[31m${string}\u001b[39m`
+let even = num => num % 2 === 0;
 
-console.log(`It is ${red('easier')} to use ${green('functions for')} ${green(bold('ANSI'))} codes!`)
+for (let i = 0; i < 13; i++) {
+    if (even(i) && i<7) {
+        flag += `${chalk.white.bgBlue(' * * * * * * * ')}${chalk.bgRed(stripeAfterStar)}\n`;
+    } else if (!even(i) && i<7) {
+        flag += `${chalk.white.bgBlue('  * * * * * *  ')}${chalk.bgWhite(stripeAfterStar)}\n`;
+    } else if (!even(i) && i>6) {
+        flag += `${chalk.bgWhite(stripe)}\n`;
+    } else if (even(i) && i>6) {
+        flag += `${chalk.bgRed(stripe)}\n`;
+    }
+}
+
+console.log(flag);
+
+
+// for (let i = 0; i < 13; i++) {
+//     if ((/^0|2|4|6$/).test(i)){
+//         flag += `${chalk.white.bgBlue(' * * * * * * * ')}${chalk.bgRed(stripeAfterStar)}\n`;
+//     } else if ((/^1|3|5$/).test(i)) {
+//         flag += `${chalk.white.bgBlue('  * * * * * *  ')}${chalk.bgWhite(stripeAfterStar)}\n`;
+//     } else if ((/^7|9|11$/).test(i)) {
+//         flag += `${chalk.bgWhite(stripe)}\n`;
+//     } else if ((/^8|10|12$/).test(i)) {
+//         flag += `${chalk.bgRed(stripe)}\n`;
+//     }
+// }

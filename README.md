@@ -1,5 +1,5 @@
 # Welcome to the Bangazon Corp!
-### a  Node.Js  corporation
+## a  Node.Js  corporation
 
 ### Some of our products:
 
@@ -33,7 +33,11 @@ $ ./global.js
 Need a quick sum? Enter this following command with the numbers you need summed up.
 We'll do the crunchin'!
 ```
-$./args.js [your numbers // separated by space key]
+$ ./args.js [your numbers // separated by space key]
 ```
 
-
+#### Salute the Flag
+Need a patriotic boost in your morale? Enter the following command:
+```
+$ ./flag.js
+```
