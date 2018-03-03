@@ -1,5 +1,5 @@
 # Welcome to the Bangazon Corp!
-### a  Node.Js  corporation
+## a  Node.Js  corporation
 
 ### Some of our products:
 
