@@ -41,3 +41,10 @@ Need a patriotic boost in your morale? Enter the following command:
 ```
 $ ./flag.js
 ```
+
+#### Read your files
+Place your file path into the following command line to read its contents (synchronously):
+```
+$ ./file-io.js [your file path]
+```
+
