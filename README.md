@@ -53,3 +53,13 @@ Place your file path into the following command line to read its contents (synch
 $ ./file-io.js [your file path]
 ```
 
+We also provide a customer-preferred *asynchronous* reading of files with this command
+```
+$ ./async.js [your file path]
+```
+
+#### Streaming
+Convert any file's text to uppercase with our through Node `Transform()` & `Writable()` stream piping
+```
+$ ./stream.js [your file path]
+```
