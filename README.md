@@ -20,7 +20,7 @@ $ node cheer.js [name of your choosing]
 We offer direct execution features through modulating file permissions.
 First, you might need to run the following for the continuing services: 
 ```
-$ chmod +x ./<file name to be executed>
+$ chmod +x <file name to be executed>
 ```
 Then, run this command for an example of the service:
 ```
