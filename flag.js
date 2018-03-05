@@ -3,20 +3,21 @@
 const repl = require('repl');
 const chalk = require('chalk');
 
-let flag= "";
-let stripeAfterStar = " ".repeat(35);
-let stripe = " ".repeat(50);
+const stripeAfterStar = " ".repeat(35);
+const stripe = " ".repeat(50);
 
-let even = num => num % 2 === 0;
+const even = num => num % 2 === 0;
+
+let flag= "";
 
 for (let i = 0; i < 13; i++) {
     if (even(i) && i<7) {
         flag += `${chalk.white.bgBlue(' * * * * * * * ')}${chalk.bgRed(stripeAfterStar)}\n`;
     } else if (!even(i) && i<7) {
         flag += `${chalk.white.bgBlue('  * * * * * *  ')}${chalk.bgWhite(stripeAfterStar)}\n`;
-    } else if (!even(i) && i>6) {
+    } else if (!even(i)) {
         flag += `${chalk.bgWhite(stripe)}\n`;
-    } else if (even(i) && i>6) {
+    } else if (even(i)) {
         flag += `${chalk.bgRed(stripe)}\n`;
     }
 }
