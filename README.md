@@ -59,7 +59,7 @@ $ ./async.js [your file path]
 ```
 
 #### Streaming
-Convert any file's text to uppercase with our through Node `Transform()` & `Writable()` stream piping
+Convert any file's text to uppercase with our Node `Transform()` & `Writable()` stream piping
 ```
 $ ./stream.js [your file path]
 ```
