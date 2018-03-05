@@ -58,3 +58,8 @@ We also provide a customer-preferred *asynchronous* reading of files with this c
 $ ./async.js [your file path]
 ```
 
+#### Streaming
+Convert any file's text to uppercase with our through Node `Transform()` & `Writable()` stream piping
+```
+$ ./stream.js [your file path]
+```
